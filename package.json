@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "beefy src/main.js:dist/main.js -- -t babelify",
-    "build": "browserify src/main.js -t babelify > dist/main.js "
+    "start": "mkdir -p dist && beefy src/index.js:dist/index.js -- -t babelify",
+    "build": "mkdir -p dist && browserify src/index.js -t babelify > dist/index.js "
   },
   "keywords": [],
   "author": "",
